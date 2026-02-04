@@ -224,3 +224,95 @@ a {
 .footer-grid h3 {
   margin-top: 0;
 }
+
+/* ===== Lab 2 improvements ===== */
+
+/* Typography + hierarchy */
+.section-subtitle {
+  margin: 6px 0 0;
+  opacity: 0.8;
+  max-width: 60ch;
+}
+
+/* Better spacing between sections */
+.site-main section {
+  padding: 38px 0;
+}
+
+/* Programs section spacing */
+.programs .container {
+  background: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 18px;
+  padding: 22px;
+}
+
+/* Card with image */
+.card--media {
+  overflow: hidden; /* keeps rounded corners clean with images */
+  padding: 0;       /* image + body handle spacing */
+}
+
+.card-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-body p {
+  margin: 0 0 12px;
+  opacity: 0.85;
+}
+
+/* Modern button styles + transitions */
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #c7d2fe;
+  background: #e8eefc; /* accent */
+  font-weight: 600;
+  transition: transform 0.12s ease, background 0.12s ease, box-shadow 0.12s ease;
+}
+
+.btn:hover {
+  background: #dbe7ff;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.10);
+}
+
+/* Hover effects for cards + smooth transitions */
+.card {
+  transition: transform 0.14s ease, box-shadow 0.14s ease, border-color 0.14s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: #cbd5e1;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.10);
+}
+
+/* Make the 6-card grid look nice */
+.cards-grid--6 {
+  margin-top: 18px;
+}
+
+/* Responsive image card heights */
+@media (max-width: 1199px) {
+  .card-img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-img {
+    height: 150px;
+  }
+}
+
