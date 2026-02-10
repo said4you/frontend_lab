@@ -21,41 +21,37 @@
       <div class="container">
         <ul class="nav-list">
           <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="#features">Features</a></li>
           <li><a href="#programs">Programs</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#footer">Contact</a></li>
+          <li><a href="#catalog">Catalog</a></li>
+          <li><a href="#cart">Cart</a></li>
         </ul>
       </div>
     </nav>
 
     <main class="site-main">
-    
 
-      <section class="features" id="features">
-        <div class="container">
-          <h2>Features</h2>
+    <section class="catalog" id="catalog">
+  <div class="container">
+    <h2>Programs Catalog</h2>
+    <div id="products" class="cards-grid"></div>
+  </div>
+</section>
 
-          <div class="cards-grid">
-            <article class="card">
-              <h3>Workout log</h3>
-              <p>Save exercises,sets,reps,and weights</p>
-            </article>
+<section class="cart" id="cart">
+  <div class="container">
+    <h2>Cart</h2>
 
-            <article class="card">
-              <h3>Goal tracker</h3>
-              <p>Set weekly targets and track completion</p>
-            </article>
+    <div id="cart-items" class="cart-items"></div>
 
-            <article class="card">
-              <h3>Calories</h3>
-              <p>Basic nutrition notes and daily totals</p>
-            </article>
+    <div class="cart-summary">
+      <strong>Total:</strong> <span id="cart-total">0</span> KZT
+    </div>
+  </div>
+</section>
 
-            
-          </div>
-        </div>
-      </section>
 
+      
       <section class="programs" id="programs">
   <div class="container">
     <h2>Programs</h2>
@@ -124,11 +120,10 @@
   
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" id="footer">
       <div class="container footer-grid">
        <div>
-          <h3>Fitify</h3>
-          <p>Simple, clean tracking for your routine.</p>
+          <h3>Contact</h3>
           <p>Email: saipovsaidbek@gmail.com</p>
           <p>Phone: +7 777 152 7299</p>
         </div>
@@ -139,7 +134,7 @@
           <ul class="footer-links">
             <li><a href="#about">About</a></li>
             <li><a href="#features">Features</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#footer">Contact</a></li>
           </ul>
         </div> 
 
@@ -153,5 +148,10 @@
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
+
   </body>
 </html>
+
+
