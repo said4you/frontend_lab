@@ -365,3 +365,203 @@ html {
 .btn-danger:hover {
   background: #fecaca;
 }
+
+
+
+
+.checkout {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f8fa;
+  padding: 40px 16px;
+}
+
+
+
+.checkout-form {
+  display: grid;
+  gap: 16px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.checkout h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.checkout-form label {
+  display: grid;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.checkout-form input,
+.checkout-form select {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  font-size: 14px;
+}
+
+.checkout-form input:focus,
+.checkout-form select:focus {
+  outline: none;
+  border-color: #c7d2fe;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 12px;
+}
+
+.success-message {
+  margin-top: 12px;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.checkout .container {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* ===== Black Friday page ===== */
+.bf-banner {
+  padding: 38px 0;
+}
+
+.bf-banner__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: #0f172a;
+  color: white;
+  border-radius: 18px;
+  padding: 22px;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.bf-banner h2 {
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.bf-banner p {
+  margin: 6px 0 0;
+  opacity: 0.9;
+}
+
+.bf-timer {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+}
+
+.bf-box {
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 14px;
+  padding: 10px 12px;
+  min-width: 82px;
+  text-align: center;
+}
+
+.bf-num {
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.bf-label {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.bf-controls {
+  padding: 18px 0;
+}
+
+.controls-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.control {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.control select {
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #e6e6e6;
+  background: white;
+}
+
+.bf-card {
+  position: relative;
+}
+
+.bf-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #0f172a;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.bf-meta {
+  opacity: 0.8;
+  margin: 6px 0 0;
+}
+
+.bf-price {
+  margin: 10px 0 0;
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.bf-old {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.bf-new {
+  font-weight: 800;
+}
+
+.bf-card--out {
+  opacity: 0.65;
+}
+
+@media (max-width: 767px) {
+  .bf-banner__inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .bf-timer {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .controls-grid {
+    grid-template-columns: 1fr;
+  }
+}

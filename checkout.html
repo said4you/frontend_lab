@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <section class="checkout">
+    <div class="container">
+      <h2>Checkout</h2>
+
+      <form id="checkout-form" class="checkout-form">
+
+        <label>
+          Full Name
+          <input type="text" id="name" />
+          <small class="error"></small>
+        </label>
+
+        <label>
+          Email
+          <input type="email" id="email" />
+          <small class="error"></small>
+        </label>
+
+        <label>
+          Phone Number
+          <input type="tel" id="phone" />
+          <small class="error"></small>
+        </label>
+
+        <label>
+          Delivery Address
+          <input type="text" id="address" />
+          <small class="error"></small>
+        </label>
+
+        <label>
+          Payment Method
+          <select id="payment">
+            <option value="">Select method</option>
+            <option value="cash">Cash</option>
+            <option value="card">Card</option>
+          </select>
+          <small class="error"></small>
+        </label>
+
+        <button type="submit" class="btn">Confirm Order</button>
+
+        <p id="success-message" class="success-message"></p>
+
+      </form>
+    </div>
+  </section>
+
+  <script src="checkout.js"></script>
+</body>
+</html>
+

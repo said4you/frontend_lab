@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Friday</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <h1>Fitify</h1>
+          <p>Black Friday Deals</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="site-nav">
+      <div class="container">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="black-friday.html" class="active">Black Friday</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="site-main">
+      <!-- Banner + Timer -->
+      <section class="bf-banner">
+        <div class="container bf-banner__inner">
+          <div>
+            <h2>BLACK FRIDAY</h2>
+            <p>Limited-time discounts on Fitify add-ons</p> </div>
+
+          <div class="bf-timer">
+            <div class="bf-box">
+              <div id="d" class="bf-num">0</div>
+              <div class="bf-label">Days</div>
+            </div>
+            <div class="bf-box">
+              <div id="h" class="bf-num">0</div>
+              <div class="bf-label">Hours</div>
+            </div>
+            <div class="bf-box">
+              <div id="m" class="bf-num">0</div>
+              <div class="bf-label">Minutes</div>
+            </div>
+            <div class="bf-box">
+              <div id="s" class="bf-num">0</div>
+              <div class="bf-label">Seconds</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Filters / Sorting -->
+      <section class="bf-controls">
+        <div class="container controls-grid">
+          <label class="control">
+            Category
+            <select id="categoryFilter">
+              <option value="all">All</option>
+              <option value="Analytics">Analytics</option>
+              <option value="Nutrition">Nutrition</option>
+              <option value="Sleep">Sleep</option>
+              <option value="Productivity">Productivity</option>
+              <option value="Cloud">Cloud</option>
+              <option value="Reports">Reports</option>
+            </select>
+          </label>
+
+          <label class="control">
+            Stock
+            <select id="stockFilter">
+              <option value="all">All</option>
+              <option value="in">In stock</option>
+              <option value="out">Out of stock</option>
+            </select>
+          </label>
+
+          <label class="control">
+            Discount
+            <select id="discountSort">
+              <option value="none">No sorting</option>
+              <option value="desc">Highest discount</option>
+              <option value="asc">Lowest discount</option>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <!-- Products -->
+      <section class="bf-products">
+        <div class="container">
+          <h2>Deals</h2>
+          <div id="bfProducts" class="cards-grid cards-grid--6"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="black-friday.js"></script>
+  </body>
+</html>

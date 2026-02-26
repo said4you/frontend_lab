@@ -1,22 +1,51 @@
-// 1) Array of objects (catalog data) — REQUIRED by lab
 const products = [
-  { id: 1, title: "Strength Builder", price: 2990, image: "images/fitness1.jpg" },
-  { id: 2, title: "Cardio", price: 2490, image: "images/fitness2.jpg" },
-  { id: 3, title: "Home Workout", price: 1990, image: "images/homeworkout.jpg" },
-  { id: 4, title: "Mobility & Yoga", price: 1890, image: "images/yoga.jpg" },
-  { id: 5, title: "Fat Loss", price: 2790, image: "images/fitness5.jpg" },
-  { id: 6, title: "Beginner Start", price: 1490, image: "images/fitness6.jpg" },
+  {
+    id: 1,
+    title: "Advanced Analytics",
+    price: 1990,
+    image: "images/gradient.png",
+  },
+  {
+    id: 2,
+    title: "Nutrition Tracking",
+    price: 2490,
+    image: "images/gradient.png",
+  },
+  {
+    id: 3,
+    title: "Sleep Analysis",
+    price: 1790,
+    image: "images/gradient.png",
+  },
+  {
+    id: 4,
+    title: "Smart Reminders",
+    price: 1290,
+    image: "images/gradient.png",
+  },
+  {
+    id: 5,
+    title: "Cloud Backup",
+    price: 990,
+    image: "images/gradient.png",
+  },
+  {
+    id: 6,
+    title: "Export Reports (PDF/CSV)",
+    price: 1590,
+    image: "images/gradient.png",
+  },
 ];
 
-// Cart holds selected items (can contain duplicates)
+
+
 let cart = [];
 
-// DOM elements
+
 const productsEl = document.getElementById("products");
 const cartItemsEl = document.getElementById("cart-items");
 const cartTotalEl = document.getElementById("cart-total");
 
-// 2) Render catalog from array — REQUIRED by lab
 function renderProducts() {
   productsEl.innerHTML = products
     .map(
@@ -25,8 +54,8 @@ function renderProducts() {
         <img src="${p.image}" alt="${p.title}" class="card-img" />
         <div class="card-body">
           <h3>${p.title}</h3>
-          <p>${p.price} KZT / month</p>
-          <button class="btn" data-id="${p.id}">Add to cart</button>
+          <p>${p.price} KZT</p>
+          <button class="btn" data-id="${p.id}">Add feature</button>
         </div>
       </article>
     `
@@ -34,7 +63,7 @@ function renderProducts() {
     .join("");
 }
 
-// 3) Event handling: add to cart — REQUIRED by lab
+
 productsEl.addEventListener("click", (e) => {
   const btn = e.target.closest("button[data-id]");
   if (!btn) return;
