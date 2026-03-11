@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<section class="checkout">
+  <div class="container">
+    <h2>Registration</h2>
+
+    <form id="register-form" class="checkout-form">
+
+      <label>
+        Name
+        <input type="text" id="name" required />
+        <small class="error"></small>
+      </label>
+
+      <label>
+        Email
+        <input type="email" id="email" required />
+        <small class="error"></small>
+      </label>
+
+      <label>
+        Password
+        <input type="password" id="password" required />
+        <small class="error"></small>
+      </label>
+
+      <label>
+        Confirm Password
+        <input type="password" id="confirmPassword" required />
+        <small class="error"></small>
+      </label>
+
+      <button type="submit" class="btn">Register</button>
+
+      <p id="success-message" class="success-message"></p>
+
+    </form>
+  </div>
+</section>
+
+<script src="register.js"></script>
+
+</body>
+</html>
